@@ -20,8 +20,7 @@ body {
 }
 /*-================Blue Ocean ==============*/
 .marca {
-    color: rgb(13, 13, 136);
-    font-size: 35px;
+   font-size: 35px;
 }
 /* ===========================main*/
 #frase1 {
@@ -42,7 +41,7 @@ body {
     border: none;
     display: inline-table;
     margin-bottom: 5%;
-    color: rgb(8, 8, 8);
+    
 
 
 
