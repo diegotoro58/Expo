@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <script src="index.js"></script>
-        <title>Blue Ocean/Mas destinos</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Blue Ocean/Mas destinos</title>
+</head>
 
 <body>
-     <!----============================theme=============-->
+    <!----============================theme=============-->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
         <symbol id="moon-stars-fill" viewBox="0 0 16 16">
             <path
@@ -26,19 +26,22 @@
                 d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
         </symbol>
     </svg>
-    
+
     <form id="smedia" class="d-flex py-1 px-0 px-lg-2">
-            
-        <a href="https://www.linkedin.com/feed/" target="_blank" class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-           <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-           <path d="M8 11l0 5"></path>
-           <path d="M8 8l0 .01"></path>
-           <path d="M12 16l0 -5"></path>
-           <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-        </svg></a>
-   </form>
-   
+
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="text-primary"><svg
+                xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                <path d="M8 11l0 5"></path>
+                <path d="M8 8l0 .01"></path>
+                <path d="M12 16l0 -5"></path>
+                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+            </svg></a>
+    </form>
+
     <!------------------NAVBAR------------------>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 " id="menu">
         <section class="container-fluid">
@@ -112,102 +115,199 @@
                 </li>
             </ul>
             <!---========================btn suscribe=================--->
-            <form class="d-flex">
-                <button id="datos" class="btn btn-primary btn-primary-outline-success" type="button">Suscribete</button>
-            </form>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Suscribete
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresa tu Email</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="row g-3">
+
+                                <div class="col-auto">Correo
+                                    <label for="inputEmail" class="visually-hidden">Email</label>
+                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Email">
+                                </div>
+                                <div class="col-auto">Ingresa una contraseña
+                                    <label for="inputPassword2" class="visually-hidden">Contraseña</label>
+                                    <input type="password" class="form-control" id="inputPassword2"
+                                        placeholder="password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar
+                                Cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </nav>
-    <section class="container-fluid">
-        <div class="card mb-3" style="max-width: 840px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="source/portada/puesta1.jpeg" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="mt-0">QUE ESPERAS?<br> HAY UN MUNDO ALLÁ AFUERA!</h5> 
+
+
+
+    <main class="container-fluid">
+        <section class=" container-fluid-flex position-relative p-3">
+            <img src="source/portada/puesta1.jpeg" class="flex-shrink- me-3" alt="...">
+            <article>
+                <h5 class="mt-5">QUE ESPERAS?<br> HAY UN MUNDO ALLÁ AFUERA!</h5>
                 <p>«La gente no hace viajes, son los viajes los que hacen a la gente». John Steinbeck <br>
 
                     «Viajar es fatal para los prejuicios, la intolerancia y la estrechez de miras». Mark Twain.</p>
-                <a href="#" class="stretched-link">Pregunta aqui!</a>            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    <section class=" container-fluid-flex position-relative p-3">
-        <img src="source/portada/puesta1.jpeg" class="flex-shrink- me-3" alt="...">
-        <article>
-            <h5 class="mt-0">QUE ESPERAS?<br> HAY UN MUNDO ALLÁ AFUERA!</h5>
-            <p>«La gente no hace viajes, son los viajes los que hacen a la gente». John Steinbeck <br>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">TOP 25 Playas Del Mundo</button>
 
-                «Viajar es fatal para los prejuicios, la intolerancia y la estrechez de miras». Mark Twain.</p>
-            <a href="#" class="stretched-link">Pregunta aqui!</a>
-        </article>
-    </section>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">A donde quieres ir ?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-primary">
+                        <section class="row">
+                            <section class="col-25">
 
-    <main class="container-fluid">
+                                <a class="tnt1 list-group-item list-group-item-action active" id="list-#1-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Baía do Sancho -
+                                    Brasil</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#2-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Balos Lagoon -
+                                    Grecia</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#3-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Eagle Beach -
+                                    Aruba</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#4-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Cable Beach -
+                                    Australia</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#5-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Reynisfjara -
+                                    Islandia</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#6-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Grace Bay - Islas
+                                    Turcas y Caicos</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#7-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Praia da Falésia -
+                                    Portugal</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#8-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Radhanagar -
+                                    India</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#9-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Spiaggia dei
+                                    Conigli - Sicilia (Italia)</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#10-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Varadero -
+                                    Cuba</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#11-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Ka'anapali -
+                                    Hawái, EE.UU.</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#12-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Siesta - Florida,
+                                    EE.UU.</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#13-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Driftwood -
+                                    Georgia, EE.UU.</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#14-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Manly Beach -
+                                    Australia</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#15-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Seven Mile Beach -
+                                    Isla Caimán</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#16-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">La Concha -
+                                    España</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#17-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Kelingking -
+                                    Indonesia</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#18-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Playa de Muro -
+                                    España</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#19-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Playa Manuel
+                                    Antonio - Costa Rica</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#20-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Ipanema -
+                                    Brasil</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#21-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Nungwi -
+                                    Tanzania</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#22-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Falassarna -
+                                    Grecia</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#23-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Nissi - Chipre</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#24-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Playa Norte -
+                                    México</a>
+                                <a class="tnt1 list-group-item list-group-item-action" id="list-#25-list"
+                                    data-bs-toggle="list" href="" role="tab" aria-controls="list">Magens Bay - Islas
+                                    Vírgenes, EE.UU.</a>
 
-        <section class="row">
-            <section class="col-25">
-                <section class="list-group" id="list-tab" role="tablist">
-                    <a class="tnt1 list-group-item list-group-item-action active" id="list-#1-list"
-                        data-bs-toggle="list" href="" role="tab" aria-controls="list">Baía do Sancho - Brasil</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#2-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Balos Lagoon - Grecia</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#3-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Eagle Beach - Aruba</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#4-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Cable Beach - Australia</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#5-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Reynisfjara - Islandia</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#6-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Grace Bay - Islas Turcas y Caicos</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#7-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Praia da Falésia - Portugal</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#8-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Radhanagar - India</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#9-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Spiaggia dei Conigli - Sicilia (Italia)</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#10-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Varadero - Cuba</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#11-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Ka'anapali - Hawái, EE.UU.</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#12-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Siesta - Florida, EE.UU.</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#13-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Driftwood - Georgia, EE.UU.</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#14-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Manly Beach - Australia</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#15-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Seven Mile Beach - Isla Caimán</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#16-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">La Concha - España</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#17-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Kelingking - Indonesia</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#18-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Playa de Muro - España</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#19-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Playa Manuel Antonio - Costa Rica</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#20-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Ipanema - Brasil</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#21-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Nungwi - Tanzania</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#22-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Falassarna - Grecia</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#23-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Nissi - Chipre</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#24-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Playa Norte - México</a>
-                    <a class="tnt1 list-group-item list-group-item-action" id="list-#25-list" data-bs-toggle="list"
-                        href="" role="tab" aria-controls="list">Magens Bay - Islas Vírgenes, EE.UU.</a>
 
-                </section>
-            </section>
+                            </section>
 
+                        </section>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
+    <footer class="container-fluid">
+
+        <p class="textofooter">© 2023 DAGT. DAGT no se hace responsable del contenido de sitios externos. Lee sobre
+            nuestra postura acerca de <a class="icon-link icon-link-hover" href="#">
+                Icon link
+                <svg class="bi" aria-hidden="true">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </a></p>
+
+        <a href="https://web.whatsapp.com/" target="_blank" class="text-light"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                <path
+                    d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+                </path>
+            </svg></a>
+        <a href="https://es-la.facebook.com/" target="_blank" class="text-light"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+            </svg></a>
+        <a href="https://twitter.com/" target="_blank" class="text-light"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
+                </path>
+            </svg></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="text-light"><svg
+                xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                <path d="M8 11l0 5"></path>
+                <path d="M8 8l0 .01"></path>
+                <path d="M12 16l0 -5"></path>
+                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+            </svg></a>
+
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
         </script>

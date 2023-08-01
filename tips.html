@@ -12,8 +12,8 @@
 </head>
 
 <body class="">
-     <!----============================theme=============-->
-     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <!----============================theme=============-->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
         <symbol id="moon-stars-fill" viewBox="0 0 16 16">
             <path
                 d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
@@ -27,19 +27,22 @@
         </symbol>
     </svg>
 
-    
+
     <form id="smedia" class="d-flex py-1 px-0 px-lg-2">
-            
-        <a href="https://www.linkedin.com/feed/" target="_blank" class="text-primary"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-           <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-           <path d="M8 11l0 5"></path>
-           <path d="M8 8l0 .01"></path>
-           <path d="M12 16l0 -5"></path>
-           <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-        </svg></a>
-   </form>
-   
+
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="text-primary"><svg
+                xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                <path d="M8 11l0 5"></path>
+                <path d="M8 8l0 .01"></path>
+                <path d="M12 16l0 -5"></path>
+                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+            </svg></a>
+    </form>
+
     <!------------------NAVBAR------------------>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-3 " id="menu">
         <section class="container-fluid">
@@ -113,62 +116,173 @@
                 </li>
             </ul>
             <!---========================btn suscribe=================--->
-            <form class="d-flex">
-                <button id="datos" class="btn btn-primary btn-primary-outline-success" type="button">Suscribete</button>
-            </form>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Suscribete
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresa tu Email</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="row g-3">
+
+                                <div class="col-auto">Correo
+                                    <label for="inputEmail" class="visually-hidden">Email</label>
+                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Email">
+                                </div>
+                                <div class="col-auto">Ingresa una contraseña
+                                    <label for="inputPassword2" class="visually-hidden">Contraseña</label>
+                                    <input type="password" class="form-control" id="inputPassword2"
+                                        placeholder="password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar
+                                Cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </nav>
 
     <main class="main">
-        <div class="accordion" id="accordionPanelsStayOpenExample">
+        <img src="source/travel/clipart.jpg" id="imgTips" class="img-fluid" alt="...">
+        <!-----=============carrousel=========-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                  Documentación
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                <div class="accordion-body">
-                  <strong>Ten en cuenta siempre , dependiendo del lugar donde vallas .</strong><br> Visado <br>Pasaporte <br>En algunos paises será indispensable tu carnet y tus vacunas al dia <br>Permisos.
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Documentación
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <strong>Ten en cuenta siempre , dependiendo del lugar donde vallas .</strong>
+                        <ul class="list-group">
+                            <li class="list-group-item">Visado </li>
+                            <li class="list-group-item">Pasaporte</li>
+                            <li class="list-group-item">En algunos paises será indispensable tu carnet y tus vacunas al
+                                dia</li>
+                            <li class="list-group-item">Permisos</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                  Equipaje
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <strong>Recuerda que este va adepender siempre del tipo de turismo que quieres hacer</strong><br>Si tu viaje es mas aventurero recuerda: <br>Llevar zapatilla o tennis comodos <br>Unas buenas botas <br>Gorra <br>Sombrero <br>Repelente <br>Bloqueador Solar<br>Gafas De Sol <br>Varios cambios de ropa que te permitan estar comodo independiente de las actividades
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Equipaje
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <strong>Recuerda que este va adepender siempre del tipo de turismo que quieres hacer</strong>
+                        <ul class="list-group">
+                            <li class="list-group-item">Si tu viaje es mas aventurero recuerda: </li>
+                            <li class="list-group-item">Llevar zapatilla o tennis comodos</li>
+                            <li class="list-group-item">Unas buenas botas</li>
+                            <li class="list-group-item">Gorra</li>
+                            <li class="list-group-item">Sombrero</li>
+                            <li class="list-group-item">Repelente</li>
+                            <li class="list-group-item">Bloqueador Solar</li>
+                            <li class="list-group-item">Gafas De Sol</li>
+                            <li class="list-group-item">Varios cambios de ropa que te permitan estar comodo
+                                independiente de las actividades</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                  Gadgets
-                </button>
-              </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                  <strong>Para aquellos que prefieren siempre estar conectados con el mundo </strong><br> Recuerda que en algunos paises los tomacorriente son un poco firente , por eesto simpre lleva contigo un adaptador universal <br>Cables usb <br>Camara si quieres documentar tu viaje <br>Baterias por supuesto <br><strong>Si eres amante de los drones,</strong><br>  un buen cover resistente a golpes y salpicaduras <br>Todo esto con el fin siempre de proteger tus equipos  
-
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Gadgets
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <strong>Para aquellos que prefieren siempre estar conectados con el mundo </strong>
+                        <ul class="list-group">
+                            <li class="list-group-item">Recuerda que en algunos paises los tomacorriente son un poco
+                                dirente</li>
+                            <li class="list-group-item">por esto simpre lleva contigo un adaptador universal</li>
+                            <li class="list-group-item">Camara si quieres documentar tu viaje</li>
+                            <li class="list-group-item">Cables usb</li>
+                            <li class="list-group-item">Baterias por supuesto</li>
+                            <li class="list-group-item"><strong>Si eres amante de los drones,</strong></li>
+                            <li class="list-group-item">un buen cover resistente a golpes y salpicaduras</li>
+                            <li class="list-group-item">Todo esto con el fin siempre de proteger tus equipos</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
+        <!-------------------------------------->
     </main>
+    <footer class="container-fluid">
+
+        <p class="textofooter">© 2023 DAGT. DAGT no se hace responsable del contenido de sitios externos. Lee sobre
+            nuestra postura acerca de <a class="icon-link icon-link-hover" href="#">
+                Icon link
+                <svg class="bi" aria-hidden="true">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+            </a></p>
+
+        <a href="https://web.whatsapp.com/" target="_blank" class="text-light"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-whatsapp" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                <path
+                    d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+                </path>
+            </svg></a>
+        <a href="https://es-la.facebook.com/" target="_blank" class="text-light"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+            </svg></a>
+        <a href="https://twitter.com/" target="_blank" class="text-light"><svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z">
+                </path>
+            </svg></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="text-light"><svg
+                xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                <path d="M8 11l0 5"></path>
+                <path d="M8 8l0 .01"></path>
+                <path d="M12 16l0 -5"></path>
+                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+            </svg></a>
+
+    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-    </script>
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
