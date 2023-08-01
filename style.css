@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+/*font-family: 'Acme', sans-serif;*/
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+#menu a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.marca {
+    color: rgb(13, 13, 136);
+    font-size: 35px;
+}
+
+#frase1 {
+    color: white;
+}
+
+.card img {
+    height: 180px;
+}
+
+
+.card-title {
+    color: rgb(219, 121, 121);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: none;
+    display: inline-table;
+    margin-bottom: 5%;
+    color: rgb(8, 8, 8);
+
+
+
+
+}
+
+/*-----font-family------------@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');font-family: 'Acme', sans-serif;*/
+
+
+.titulolista {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    font-style: oblique;
+    font: bolder;
+    text-align: center;
+    padding: 25px;
+    color: rgb(243, 245, 238);
+    background-color: rgb(1, 0, 7);
+
+}
+
+
+#imgcon {
+    margin-top: 0%;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 100px;
+
+}
+
+/*----------footer----------*/
+footer {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    justify-items: end;
+    padding: 50px;
+    background-color: rgb(20, 19, 19);
+    color: rgb(255, 250, 250);
+}
+
+
+/*===============CONTACTO=========*/
+#txtgo {
+    text-align: left;
+    font-size: 25px;
+}
+
+.titulo-form {
+    color: rgb(99, 98, 98);
+    margin-left: 25px;
+    font-size: 20px;
+    text-decoration: double;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*-------------------formulario reserva------------*/
+#form-c {
+    font-family: 'Dancing';
+    border-radius: 10px;
+    color: rgb(34, 10, 92);
+    width: 50%;
+    margin: 5px 15px 35px 15px;
+    background-color: rgb(73, 187, 177);
+}
+
+/*-------------------------header---------*/
+
+
+#smedia {
+    background-color: rgb(61, 110, 114);
+    display: flex;
+    justify-content: right;
+
+}
+
+/* -----------------conocenos-------------*/
+#mision {
+    color: rgb(87, 82, 82);
+}
+
+#tmision {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    color: rgb(118, 119, 129);
+    font-family: sans-serif;
+    font: bolder;
+}
+
+/*-----------------modal------------------*/
+.md1 {
+    background-color: rgb(165, 231, 226);
+}
