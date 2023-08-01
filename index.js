@@ -91,7 +91,7 @@ if (alertTrigger) {
         appendAlert('Nice, you triggered this alert message!', 'success')
     })
 }
-/*===================funtion de suscripción=============
+/*===================funtion de suscripción=============*/
 
 window.onload = function () {
     const suscribsion = () => {
@@ -109,4 +109,4 @@ window.onload = function () {
     datos.onclick = function () {
         suscribsion();
     }
-};*/
+};
